@@ -1,0 +1,41 @@
+* Solved Exercises and Homework Problems for NLvib
+see https://www.ila.uni-stuttgart.de/nlvib
+From p. 105 in their book.
+Solved excercises are distribted along with their program and found in the folder: nlvib/EXAMPLES
+
+
+Table 5.1 Solved exercises with their learning goals
+#+CAPTION: Table 5.1 Solved exercises with their learning goals
+| No. | System                        | Learn that:                                 |
+|-----+-------------------------------+---------------------------------------------|
+|   1 | Duffing                       | Computational agrees with analytical HB     |
+|   2 | Single-DOF, unilateral spring | Zeroth and higher harmonics can be relevant |
+|   3 | Beam, dry friction            | HB can save a lot of computational effort   |
+|   4 | Beam, cubic spring            | Dynamic scaling can be beneficial           |
+
+Table 5.2 Homework problems with their learning goals
+#+CAPTION: Table 5.2 Homework problems with their learning goals
+#+name: homework
+| No. | System                      | Learn to...                                                                                                                           |
+|-----+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------------|
+| A   | Linear single-DOF           | ...use path continuation                                                                                                              |
+| B   | Duffing                     | ...use more path continuation, and run a harmonic convergence study                                                                   |
+| C   | Two-DOF, cubic spring       | ...implement Hill’s method for stability analysis                                                                                     |
+| D   | Two-DOF, unilateral springs | ...implement a new nonlinearity, implement combined static–dynamic loading, and compute a subharmonic response                        |
+| E   | Van der Pol                 | ...implement another new nonlinearity, implement limit cycle analysis (self-excitation), and continue w.r.t. a nonlinearity parameter |
+| F   | Beam, dry friction          | ...implement a condensation of the HB equations to the nonlinear part                                                                 |
+
+* Other numerical tools for periodic calculations
+** Automated Computation of Spectral Submanifolds for Nonlinear Modal Analysis
+https://github.com/LCSETH/SSMtool
+
+See the accompanying paper
+Analytic Prediction of Isolated Forced Response Curves from Spectral Submanifolds
+https://arxiv.org/abs/1812.06664
+
+** SteadyStateTool
+https://github.com/LCSETH/SteadyStateTool
+https://arxiv.org/abs/1810.10103
+
+And Recipes for Continuation(incl. coco toolbox for matlab)
+https://epubs.siam.org/doi/book/10.1137/1.9781611972573

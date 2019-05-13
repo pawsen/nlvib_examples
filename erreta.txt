@@ -1,0 +1,16 @@
+# Solved Exercise 2: Single-DOF Oscillator with Unilateral Spring
+
+Fail because SingleMassOsciallator expects array of array of cells, ie.
+for i=1:length(nonlinear_elements)
+    nonlinear_elements{i}.force_direction = 1;
+end
+
+Is:
+nonlinear_elements = struct('type','unilateralSpring','stiffness',10,'gap',1) ;
+
+Should be:
+nonlinear_elements{1} = struct('type','unilateralSpring','stiffness',10,'gap',1) ;
+
+I guess you wanted to be able to say: 
+nonlinear_elements = struct(...
+    'type','unilateralSpring','stiffness',10,'gap',1,'force_direction',1) ;
